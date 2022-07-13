@@ -6,8 +6,8 @@ public class SwapTest1 {
         y = temp;
     }
     public static void main(String[] args) {
-        Integer x = new Integer(99);
-        Integer y = new Integer(66);
+        int x = 99;
+        int y = 66;
         System.out.println("x = " + x + " y = " + y);
         swap(x,y);
         System.out.println("x = " + x + " y = " + y);
