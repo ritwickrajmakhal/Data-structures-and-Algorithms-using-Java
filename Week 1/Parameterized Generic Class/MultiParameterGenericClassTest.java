@@ -1,8 +1,8 @@
-class FairData<T ,V>{
+class PairData<T ,V>{
     private T x;
     private V y;
 
-    public FairData(T a, V b){
+    public PairData(T a, V b){
         x = a;
         y = b;
     }
@@ -19,16 +19,16 @@ class FairData<T ,V>{
 
 public class MultiParameterGenericClassTest{
     public static void main(String[] args) {
-        FairData<String,String> a = new FairData<String,String>("Debasis","Samanta");
+        PairData<String,String> a = new PairData<String,String>("Debasis","Samanta");
         a.printData();
 
-        FairData<String,Integer> b = new FairData<String,Integer>("Debasis",9);
+        PairData<String,Integer> b = new PairData<String,Integer>("Debasis",9);
         b.printData();
         
-        FairData<Integer,String> c = new FairData<Integer,String>(99,"Samanta");
+        PairData<Integer,String> c = new PairData<Integer,String>(99,"Samanta");
         c.printData();
 
-        FairData<Integer,Double> d = new FairData<Integer,Double>(99,99.9);
+        PairData<Integer,Double> d = new PairData<Integer,Double>(99,99.9);
         d.printData();
 
     }
